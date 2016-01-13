@@ -1,7 +1,12 @@
 {
   "method": "POST",
   "url": "http://192.168.99.100:9200/elasticsearch_nodejs_examples/elasticsearch_nodejs_examples/_mget",
-  "body": "{\"ids\":[1,\"__non__existent__\"]}",
+  "body": {
+    "ids": [
+      1,
+      "__non__existent__"
+    ]
+  },
   "status": 200,
   "response": {
     "docs": [

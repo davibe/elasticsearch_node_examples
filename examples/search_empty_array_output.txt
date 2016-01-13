@@ -1,10 +1,16 @@
 {
   "method": "POST",
   "url": "http://192.168.99.100:9200/elasticsearch_nodejs_examples/elasticsearch_nodejs_examples/_search",
-  "body": "{\"query\":{\"missing\":{\"field\":\"empty\"}}}",
+  "body": {
+    "query": {
+      "missing": {
+        "field": "empty"
+      }
+    }
+  },
   "status": 200,
   "response": {
-    "took": 4,
+    "took": 1,
     "timed_out": false,
     "_shards": {
       "total": 5,
