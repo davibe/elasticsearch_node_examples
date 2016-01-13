@@ -1,5 +1,16 @@
 
-Structure
+README
+------
+
+
+A collection of examples on how to use Elasticsearch node.js client.
+The purpose is to have a quick reference of 
+- common calls
+- response payloads
+- common response errors
+- how to handle errors
+
+### Structure
 
 - `common`: contains definitions that are common to every example
 - `runner`: runs the examples with specific order and saves ES client traces
