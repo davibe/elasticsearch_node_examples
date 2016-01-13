@@ -1,0 +1,30 @@
+{
+  "method": "POST",
+  "url": "http://192.168.99.100:9200/elasticsearch_nodejs_examples/elasticsearch_nodejs_examples/_mget",
+  "body": "{\"ids\":[1,\"__non__existent__\"]}",
+  "status": 200,
+  "response": {
+    "docs": [
+      {
+        "_index": "elasticsearch_nodejs_examples",
+        "_type": "elasticsearch_nodejs_examples",
+        "_id": "1",
+        "_version": 1,
+        "found": true,
+        "_source": {
+          "foo": "bar",
+          "full": [
+            "something"
+          ],
+          "empty": []
+        }
+      },
+      {
+        "_index": "elasticsearch_nodejs_examples",
+        "_type": "elasticsearch_nodejs_examples",
+        "_id": "__non__existent__",
+        "found": false
+      }
+    ]
+  }
+}

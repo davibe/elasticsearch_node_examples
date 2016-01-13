@@ -1,0 +1,34 @@
+{
+  "method": "POST",
+  "url": "http://192.168.99.100:9200/elasticsearch_nodejs_examples/elasticsearch_nodejs_examples/_search",
+  "body": "{\"query\":{\"missing\":{\"field\":\"empty\"}}}",
+  "status": 200,
+  "response": {
+    "took": 4,
+    "timed_out": false,
+    "_shards": {
+      "total": 5,
+      "successful": 5,
+      "failed": 0
+    },
+    "hits": {
+      "total": 1,
+      "max_score": 1,
+      "hits": [
+        {
+          "_index": "elasticsearch_nodejs_examples",
+          "_type": "elasticsearch_nodejs_examples",
+          "_id": "1",
+          "_score": 1,
+          "_source": {
+            "foo": "bar",
+            "full": [
+              "something"
+            ],
+            "empty": []
+          }
+        }
+      ]
+    }
+  }
+}

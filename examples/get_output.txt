@@ -1,0 +1,19 @@
+{
+  "method": "GET",
+  "url": "http://192.168.99.100:9200/elasticsearch_nodejs_examples/elasticsearch_nodejs_examples/1",
+  "status": 200,
+  "response": {
+    "_index": "elasticsearch_nodejs_examples",
+    "_type": "elasticsearch_nodejs_examples",
+    "_id": "1",
+    "_version": 1,
+    "found": true,
+    "_source": {
+      "foo": "bar",
+      "full": [
+        "something"
+      ],
+      "empty": []
+    }
+  }
+}
