@@ -1,0 +1,24 @@
+{
+  "method": "POST",
+  "url": "http://192.168.99.100:9200/elasticsearch_nodejs_examples/elasticsearch_nodejs_examples/1/_update?retry_on_conflict=99",
+  "body": {
+    "script": {
+      "inline": "ctx._source.counter = (ctx._source.counter ? ctx._source.counter : 0) + 1",
+      "params": {
+        "count": 1
+      }
+    }
+  },
+  "status": 200,
+  "response": {
+    "_index": "elasticsearch_nodejs_examples",
+    "_type": "elasticsearch_nodejs_examples",
+    "_id": "1",
+    "_version": 2,
+    "_shards": {
+      "total": 2,
+      "successful": 1,
+      "failed": 0
+    }
+  }
+}

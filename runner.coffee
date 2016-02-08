@@ -18,6 +18,7 @@ Q.genrun ->
   yield run 'mget'
   yield client.indices.refresh({index, type}) # index needs to be refreshed in order to find stuff
   yield run 'search_empty_array'
+  yield run 'script_atomic_counter_increment'
 
 
 .catch (e) ->
